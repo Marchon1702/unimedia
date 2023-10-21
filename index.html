@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unimédia</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>   
+        <div class="cabecalhoimg">
+            <img src="imagens/book-blueflames.png" alt="livro em chamas azuis">
+        </div>
+        <div class="cabecalhonome">
+            <h1>Unimédia</h1>
+        </div>
+    </header>
+    <main>
+        <section class="principal">
+            <div id="mediafacul">
+                <p>Média do curso:
+                    <input type="number" name="mediafac" id="mediafac" value="7">
+                    <input type="button" name="next" id="next" value="Continuar" onclick="continuar()">
+                </p>
+            </div>
+            <div id="recebedora">
+                <p class="form">Nota V1: <input type="number" name="v1txt" id="v1txt" placeholder="Inisira sua nota de V1"></p>
+                <p class="form">Nota VT: <input type="number" name="vttxt" id="vttxt" placeholder="Insira sua nota de VT"></p>
+                <p class="form">Nota V2: <input type="number" name="v2txt" id="v2txt" placeholder="Insira sua nota de V2"></p>
+                <input type="button" name="verificar" id="verificar" value="Verificar" onclick="verificar()">
+            </div>
+            <div id="res">
+                <h2>Status Atual:</h2>
+                <p id="situacao"></p>
+                <input type="button" name="restart" id="restart" value="Refazer" onclick="refazer()">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3>© All rights reserved to Matheus Marchon.</h3>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

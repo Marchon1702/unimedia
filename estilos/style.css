@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=VT323&display=swap');
+
+/*Mobile First*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font: normal 1em arial;
+}
+
+body {
+    height: 100vh;
+    background-image: url(../imagens/backgorund-brancosuave.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    color: #ffdd00;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.753);
+} 
+
+img {
+    transform: translate(25px, -10px);
+}
+
+main {
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal {
+    background-color: #ffdd00c5;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#mediafacul {
+    display: block;
+}
+
+#mediafacul #mediafac {
+    width: 50px;
+    box-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+
+#mediafacul p {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+#recebedora {
+    display: none;
+}
+
+.form {
+    font-weight: bolder;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 2px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+
+#verificar, #next, #restart {
+    display: block;
+    margin: auto;
+    padding: 7px;
+    font-weight: bolder;
+    background-color: #0070B8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#res {
+    display: none;
+}
+
+#res > h2 {
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+#res p {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    font-weight: bolder;
+}
