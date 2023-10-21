@@ -19,7 +19,14 @@ function continuar() {
 
 function verificar() {
     media = (Number(v1.value) + Number(vt.value) + Number(v2.value))/ 3
-    resta = mediacurso.value - media 
+    if (v2.value == 0) {
+        resta = mediacurso.value*3 - (Number(v1.value) + Number(vt.value)) 
+    } else if (vt.value == 0) {
+        resta = mediacurso.value*3 - (Number(v1.value) + Number(v2.value)) 
+    } else if (v1.value == 0) {
+        resta = mediacurso.value*3 - (Number(vt.value) + Number(v2.value)) 
+    }
+    
     if(v1.value == '' || vt.value == '' || v2.value == '') {
         window.alert('Erro: Preencha os campos solicitados!')
     } else if (media >= mediacurso.value) {
