@@ -25,13 +25,11 @@ function verificar() {
     } else if (media >= mediacurso.value) {
         recebedora.style.display = 'none'
         result.style.display = 'block'
-        media.toFixed(2)
-        situacao.innerHTML = `Aprovado <br> Sua média atual é: ${media}` 
+        situacao.innerHTML = `Aprovado <br> Sua média atual é: ${media.toFixed(1)}` 
     } else {
         recebedora.style.display = 'none'
         result.style.display = 'block'
-        resta.toFixed(2)
-        situacao.innerHTML = `Reprovado <br> Faltam ${resta} pontos para a aprovação.` 
+        situacao.innerHTML = `Reprovado <br> Faltam ${resta.toFixed(1)} pontos para a aprovação.` 
     }               
     }
 
